@@ -22,7 +22,6 @@ const options = {
   onClose(selectedDates) {
     if (selectedDates[0] < new Date()) {
       Notify.failure('Please choose a date in the future');
-      //   alert('Please choose a date in the future');
       refs.btnStart.disabled = true;
     } else {
       refs.btnStart.disabled = false;
